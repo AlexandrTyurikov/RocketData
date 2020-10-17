@@ -59,7 +59,7 @@ def tui_pars():
                 phones.clear()
                 for i in office['phones']:
                     phones.append(i['phone'])
-                    phones.append(i['url'])
+                    phones.append(i['url'][4:])
                 if office['hoursOfOperation']['saturday']['isDayOff'] == False:
                     saturday = f"{office['hoursOfOperation']['saturday']['startStr']} до {office['hoursOfOperation']['saturday']['endStr']}"
                 else:
