@@ -23,7 +23,7 @@ def mebelshara_pars():
                 'phones': salon['data-shop-phone'],
                 'working_hours': f"{salon['data-shop-mode1']} {salon['data-shop-mode2']}"
             })
-    with open('data_site_1.json', 'w') as file:
+    with open('data_site_1.json', 'w', encoding='utf-8') as file:
         json.dump(date, file, indent=4, ensure_ascii=False)
 
 
