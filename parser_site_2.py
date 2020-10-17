@@ -81,7 +81,7 @@ def tui_pars():
                 })
         spinner.stop()
         print("Процесс окончен")
-    with open('data_site_2.json', 'w') as file:
+    with open('data_site_2.json', 'w', encoding='utf-8') as file:
         json.dump(date, file, indent=4, ensure_ascii=False)
 
 
